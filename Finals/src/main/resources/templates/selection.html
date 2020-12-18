@@ -1,0 +1,52 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<style>
+		
+		div{border:2px dotted blue; box-shadow:5px 10px pink; background-color: wheat; padding: 20px; margin:17%}
+		
+</style>
+</head>
+<body bgcolor="aqua">
+
+<form>
+<div>
+	<label>ID of the user: </label>
+	<span th:text="${id}" ></span>
+	<br>
+	<label>Name of the customer:</label>
+	<span th:text="${name}" ></span>
+	<br>
+	<label>Type of ticket bought:</label>
+	<span th:text="${ticket}" ></span>
+	<br>
+	<label> Number of people buying same ticket:</label>
+	<span th:text="${nots}" ></span>
+	<br>
+	<label>Total price of the ticket:</label>
+	<span th:text="${price}" ></span>
+	<br>
+	<label>Name of the movie:</label>
+	<span th:text="${movie}" ></span>
+	<br>
+	<label>date and time for the movie:</label>
+	<span th:text="${date}" ></span>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<span th:text="${time}" ></span>
+	<br>
+	<label>Seat choosen:</label><br>
+	<label>Row number: </label>
+	<span th:text="${row}" ></span>
+	&nbsp;&nbsp;
+	<label>Seat in that row:</label>
+	<span th:text="${column}" ></span>
+	<br>
+	
+	
+	</div>
+</form>
+
+
+
+</body>
+
+</html>
